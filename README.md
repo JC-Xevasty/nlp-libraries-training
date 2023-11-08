@@ -2,6 +2,8 @@
 
 Simply enter any article, document, or lengthy text and our AI-powered summarizer will extract the key points and present them in a concise, easy-to-read format. Save time and stay informed with our smart text summarization tool.
 
+**Prerequisite: Python v3.10 or lower**
+
 To run:
 
 1. Clone repository to local machine.
