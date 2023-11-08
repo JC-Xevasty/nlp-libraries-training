@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Inter;
+}
+
+body {
+  width: 100%;
+}
+.container {
+  width: 100vw;
+}
+
+nav {
+  height: 80px;
+  max-height: 80px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav img {
+  margin:  0 32px;
+  height: 44px;
+  width: 44px;
+}
+
+main {
+  padding: 100px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+}
+
+.wrapper {
+  max-width: 768px;
+  width: 90%;
+  text-align: center;
+}
+
+.wrapper h2 {
+  margin-bottom: 16px;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: -0.72px;
+}
+
+.wrapper p {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.wrapper form {
+  margin: 32px 0;
+  display: grid;
+  grid-template-columns: 1fr 48px 1fr;
+  gap: 32px;
+}
+
+.wrapper form label {
+  color: #465360;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 0.6px;
+}
+
+.wrapper .error {
+  color: #D82727;
+}
+
+.wrapper .input-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.wrapper textarea,
+.wrapper .output {
+  border-radius: 6px;
+  box-shadow: 0px 0px 0px 1px rgba(134, 147, 160, 0.16), 0px 1px 2px 0px rgba(0, 0, 0, 0.06);
+  margin: 8px 0 16px;
+  width: 100%;
+  height: 160px;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  padding: 6px 12px;
+}
+
+.wrapper textarea {
+  resize: none;
+}
+
+.wrapper .output {
+  text-align: left;
+}
+
+.wrapper button {
+  width: 100%;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0.28px;
+  cursor: pointer;
+}
+
+.wrapper button[type='submit'] {
+  background-color: #007AFF;
+  color: #FFF;
+  box-shadow: 0px 0px 0px 1px #007AFF, 0px 1px 1px 0px rgba(0, 0, 0, 0.10);
+}
+
+.wrapper button[type='submit'].disabled {
+  pointer-events: none;
+  cursor: none;
+}
+
+.wrapper .reset-wrapper {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.wrapper button.reset {
+  background-color: #FFF;
+  color: #465360;
+  box-shadow: 0px 0px 0px 1px rgba(70, 83, 96, 0.16), 0px 1px 1px 0px rgba(0, 0, 0, 0.10);
+}
+
+.wrapper .icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper .icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 48px;
+  width: 48px;
+  background-color: #F8F8F8;
+  border-radius: 50%;
+  box-shadow: 0px 0px 0px 1px rgba(70, 83, 96, 0.16), 0px 1px 1px 0px rgba(0, 0, 0, 0.10);
+}
+
+.wrapper .icon-wrapper img {
+  height: 24px;
+  width: 24px;
+}
+
+@media screen and (max-width: 864px) {
+  .wrapper form {
+    grid-template-columns: 1fr;
+  }
+
+  .wrapper .icon-wrapper {
+    transform: rotate(90deg);
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .wrapper .reset-wrapper {
+    grid-template-columns: 1fr;
+  }
+}
